@@ -7,7 +7,7 @@ import * as exercises from "./exercises";
 showResult(1, exercises.exercise01("Pepe"));
 showResult(2, exercises.exercise02(10));
 showResult(3, exercises.exercise03("Hello world!"));
-// showResult(4, exercises.exercise04("Hi, I am learning Javascript"));
+ showResult(4, exercises.exercise04("Hi, I am learning Javascript"));
 // showResult(5, exercises.exercise05("CodeSpace"));
 // showResult(6, exercises.exercise06("Rats live on no evil star"));
 // showResult(7, exercises.exercise07(new Date()));
