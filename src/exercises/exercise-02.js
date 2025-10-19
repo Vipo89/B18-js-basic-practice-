@@ -5,7 +5,13 @@ Muestra el siguiente mensaje dependiendo de si un número es par o impar:
 Nota: even = par | odd = impar
 */
 export function exercise02(number) {
-  // Escribe tu solución aquí
-
+  let result;
+  //If the remainder of the division by two is 0, it means that the number is even.
+  if (number % 2 == 0) {
+    result = "even";
+    //Otherwise, it is odd
+  } else {
+    result = "odd";
+  }
   return `Number ${number} is ${result}`;
 }
