@@ -13,6 +13,9 @@ Un reloj muestra:
 */
 export function exercise07(date) {
   // Escribe tu solución aquí
+  const { hours, minutes, seconds } = getTime(date);
+
+  const ms = hours * 3600000 + minutes * 60000 + seconds * 1000;
 
   return `Milliseconds from midnight: ${ms}`;
 }
