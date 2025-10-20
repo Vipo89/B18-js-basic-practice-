@@ -6,6 +6,18 @@ que ocupa cada carácter en el abecedario. Para que sea más sencillo, elimina l
 */
 export function exercise10(string) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  const alphabetArray = alphabet.split(''); 
+  const position = [];
 
-  // Escribe tu solución aquí
+  const letters = string.toLowerCase().split('');
+
+  letters.forEach((stringlett) => {
+    alphabetArray.forEach((letter, j) => {
+      if (stringlett === letter) {
+        position.push(j + 1); 
+      }
+    });
+  });
+
+  return position;
 }
