@@ -11,7 +11,10 @@ que recibe como parámetro dos cadenas y devuelve -1 si la primera es menor que 
 */
 export function exercise12(movies) {
   // Escribe tu solución aquí
+  const orderedMovies = [...movies].sort((a, b) => a.title.localeCompare(b.title));
+  return orderedMovies
 }
+
 
 function sortStrings(a, b) {
   const string1 = a.toLowerCase();
