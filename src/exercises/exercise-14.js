@@ -5,5 +5,16 @@ como parámetros filtra las películas que pertenezcan a la categoria "Drama"
 e incluye solo el título y la descripción.
 */
 export function exercise14(movies, categories) {
-  // Escribe tu solución aquí
+  let moviesCategory = [];
+
+  movies.forEach((movie) => {
+    if (movie.category === categories.drama) {
+      moviesCategory.push({
+        title: movie.title,
+        description: movie.description,
+      });
+    }
+  });
+
+  return moviesCategory;
 }
