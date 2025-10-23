@@ -17,4 +17,17 @@ Nota: siempre letras minúsculas y sin tildes (para simplificar)
 */
 export function exercise18(string) {
   // Escribe tu solución aquí
+  const text = string.toLowerCase();
+  const letters = {};
+
+  text.split("").forEach(e => {
+    if (e !== " ") { 
+      if (letters[e]) {
+        letters[e] += 1;
+      } else {
+        letters[e] = 1;
+      }
+    }
+  });
+  return letters;
 }
