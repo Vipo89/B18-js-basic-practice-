@@ -6,5 +6,11 @@ por almohadilla (#) y las palabras sin espacios comenzando la primera letra en m
 Ejemplo: "This is a hashtag" se transforma en "#ThisIsAHashtag"
 */
 export function exercise17(string) {
-  // Escribe tu solución aquí
+  const phrasesplitted = string.split(" ");
+
+  const phraseAdded = phrasesplitted.map(
+    (w) => w.charAt(0).toUpperCase() + w.slice(1)
+  );
+
+  return "#" + phraseAdded.join(" ");
 }
