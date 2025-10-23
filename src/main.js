@@ -19,7 +19,7 @@ showResult(12, exercises.exercise12(movies));
 showResult(13, exercises.exercise13(movies.slice(0, 5)));
 showResult(14, exercises.exercise14(movies.slice(0, 5), categories));
 showResult(15, exercises.exercise15(movies.slice(0, 5)));
-// showResult(16, exercises.exercise16(movies));
+ showResult(16, exercises.exercise16(movies));
 // showResult(17, exercises.exercise17("This is a hashtag"));
 // showResult(18, exercises.exercise18("Hello world"));
 // showResult(19, exercises.exercise19("Code deco"));
