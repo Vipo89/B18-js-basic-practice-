@@ -15,6 +15,7 @@ Ejemplo: "Hello world"
 
 Nota: siempre letras minúsculas y sin tildes (para simplificar)
 */
+
 export function exercise18(string) {
   // Escribe tu solución aquí
   const text = string.toLowerCase();
