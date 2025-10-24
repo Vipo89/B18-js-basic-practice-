@@ -16,9 +16,26 @@ Nota: evita llamar a la función con números altos en la versión recursiva.
 */
 
 export function exercise20(n) {
-  // Escribe tu solución aquí
+  if (n > 20) return "Número demasiado alto"
+  if (n === 0) return 0;
+  if (n === 1) return 1;
+  return exercise20Iterative(n - 1) + exercise20Iterative(n - 2);
 }
 
 export function exercise20Iterative(n) {
-  // Escribe tu solución aquí
+  if (n === 0) return 0;
+  if (n === 1) return 1;
+
+  let n1 = 0;
+  let n2 = 1;
+  let nhold = 0;
+
+  for (let i = 2; i <= n; i++) {
+    // <= n para incluir la posición n
+    nhold = n1 + n2;
+    n1 = n2;
+    n2 = nhold;
+  }
+
+  return nhold;
 }
