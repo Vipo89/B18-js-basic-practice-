@@ -6,5 +6,5 @@ por valoracion (propiedad "rating") de mayor a menor
 */
 export function exercise11(movies) {
   const orderedMovies = [...movies].sort((a, b) => b.rating - a.rating);
-  return orderedMovies
+  return orderedMovies;
 }
