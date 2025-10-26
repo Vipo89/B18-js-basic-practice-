@@ -21,8 +21,10 @@ export function exercise18(string) {
   const text = string.toLowerCase();
   const letters = {};
 
-  text.split("").forEach(e => {
-    if (e !== " ") { 
+  //Ignore the spaces
+  text.split("").forEach((e) => {
+    if (e !== " ") {
+      //If the letter exists as a key in letters, we add 1; if it does not exist, it is created with a one.
       if (letters[e]) {
         letters[e] += 1;
       } else {
@@ -30,5 +32,6 @@ export function exercise18(string) {
       }
     }
   });
+
   return letters;
 }

@@ -15,8 +15,13 @@ export function exercise19(string) {
 
   const stringProcessed = exercise18(string);
 
+  //Store the count of the first letter to compare with others
   const nCopyLetters = Object.values(stringProcessed);
+
+  //To check how many times it repeats, we take the first letter and count how many times it repeats as a reference.
   const nFirst = nCopyLetters[0];
+
+  // Check if every letter has the same count as the first one
   const isIsogram = nCopyLetters.every((count) => count === nFirst);
 
   return `the string '${string}' is ${isIsogram ? "" : "not "}an isogram`;
