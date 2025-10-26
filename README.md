@@ -28,6 +28,10 @@ Each exercise is implemented in its own function, following a clear and modular 
 
 If you find a better way to do the exercises, fork it and send it to me, so you can help me improve!
 
+## Important
+
+The comments are in the develop branch! Not in the release branch.
+
 ## How to Use
 
 1. Clone the repository:
