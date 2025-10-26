@@ -7,14 +7,13 @@ Ejemplo: "This is a hashtag" se transforma en "#ThisIsAHashtag"
 */
 
 export function exercise17(string) {
-  //We convert the string into arrays for each “ ” that exists.
+
   const phrasesplitted = string.split(" ");
 
-  //We capitalize the first letter of each of these array spaces and leave the rest as they are.
   const phraseAdded = phrasesplitted.map(
     (w) => w.charAt(0).toUpperCase() + w.slice(1)
   );
 
-  //We return the phrase together with the # at the beginning.
+  
   return "#" + phraseAdded.join("");
 }

@@ -8,8 +8,6 @@ Atención: cuidado con vocales aisladas y con espacios en blanco dobles
 export function exercise04(string) {
   const vowels = "aeiouAEIOU";
 
-  //We convert the string into a string of arrays, then check if any vowels are in letter.
-  // If so, we delete them and then rejoin the string.
   return string
     .split("")
     .filter((letter) => !vowels.includes(letter))

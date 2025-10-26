@@ -17,14 +17,14 @@ Nota: siempre letras minúsculas y sin tildes (para simplificar)
 */
 
 export function exercise18(string) {
-  // Escribe tu solución aquí
+
   const text = string.toLowerCase();
   const letters = {};
 
-  //Ignore the spaces
+
   text.split("").forEach((e) => {
     if (e !== " ") {
-      //If the letter exists as a key in letters, we add 1; if it does not exist, it is created with a one.
+      
       if (letters[e]) {
         letters[e] += 1;
       } else {

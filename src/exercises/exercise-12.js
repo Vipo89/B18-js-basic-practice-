@@ -10,12 +10,11 @@ que recibe como parámetro dos cadenas y devuelve -1 si la primera es menor que 
 0 si son iguales y 1 si la primera es mayor que la segunda.
 */
 export function exercise12(movies) {
-  // Escribe tu solución aquí
-  //Here we create a variable, but by sorting the movies by name, localeCompare already ignores upper and lower case letters, so there is no need to use tolowercase.
+  
   const orderedMovies = [...movies].sort((a, b) =>
     a.title.localeCompare(b.title)
   );
-  //We return only the titles of the movies, listed alphabetically.
+
   return orderedMovies.map((movie) => movie.title);
 }
 

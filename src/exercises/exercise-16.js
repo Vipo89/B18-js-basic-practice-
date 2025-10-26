@@ -12,12 +12,12 @@ export function exercise16(movies) {
   const actors = ["Leonardo DiCaprio", "Robert De Niro", "Tom Hanks"];
   const bestMovies = [];
 
-  //Filter by actors
+
   actors.forEach((actor) => {
     const actorMovies = movies.filter((m) => m.actors.includes(actor));
 
     if (actorMovies.length > 0) {
-      //We filter and search for the movie with the highest rating for those actors.
+
       const bestMovie = actorMovies.reduce((max, movie) => {
         if (movie.rating > max.rating) {
           return movie;
@@ -29,6 +29,6 @@ export function exercise16(movies) {
       bestMovies.push(bestMovie.title);
     }
   });
-  //When we have them, we return the result.
+
   return bestMovies;
 }

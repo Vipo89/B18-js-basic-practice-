@@ -9,20 +9,20 @@ export function exercise13(movies) {
   let sum = 0;
   console.log(movies);
 
-  //We add up all the movie ratings and calculate the average.
+
   movies.forEach((movierat) => {
     sum += movierat.rating;
   });
   const average = sum / movies.length;
 
-  //We create an array that only includes those that are equal to or greater than the average.
+ 
   const validmovies = [];
   movies.forEach((selectedmovies) => {
     if (selectedmovies.rating >= average) {
       validmovies.push(selectedmovies);
     }
   });
-  //We sort them by rating and return an array with the movies.
+ 
   validmovies.sort((a, b) => b.rating - a.rating);
   const result = [];
   validmovies.forEach((movie) => {
